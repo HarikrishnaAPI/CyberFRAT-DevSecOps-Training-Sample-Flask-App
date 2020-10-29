@@ -4,7 +4,7 @@ Pipeline {
   stages {
     stage{'Build dockerimage'} {
       steps {
-        sh 'docker build -t cyberfrat:$Build_Number.'
+        sh 'docker build -d Cyberfrat:$Build_Number.'
         }
         
      }
