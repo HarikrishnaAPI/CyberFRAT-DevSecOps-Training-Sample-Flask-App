@@ -1,10 +1,10 @@
-Pipeline {
+pipeline {
   agent any
   
   stages {
     stage{'Build dockerimage'} {
       steps {
-        sh 'docker build -d Cyberfrat:$Build_Number.'
+        sh 'docker build -t Cyberfrat:$Build_Number.'
         }
         
      }
